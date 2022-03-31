@@ -14,6 +14,9 @@ public class Nuclusteq {
             if(m.get(input.charAt(i)) != null) {
                 m.put(input.charAt(i), m.get(input.charAt(i))+1);
                 input = input.substring(0,i) + (m.get(input.charAt(i))-1) + input.substring(i+1);
+                // this is create merge conflit
+                // This line will generate confict.
+
             }
         }
         return input;
